@@ -33,47 +33,65 @@ p {
     margin: 0 auto;
 }
 
-body{
+body {
     background: #F3F3F3;
 }
+
 /* All common css end */
 
 /* Header Part Start */
-#headerPart{
+#headerPart {
     background: #FFF8F3;
 }
-.header{
+
+.outImg {
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    top: 40px;
+    left: -150px;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
 }
-.header .logo{
-    margin-top: 30px;
+
+.header .logo {
+    padding-top: 65px;
     transition: .5s;
 }
-.header .logo:hover{
+
+.header .logo:hover {
     transform: scale(1.1);
 }
 
-.menu ul{
+.menu ul {
     display: flex;
+    padding-top: 40px;
 }
-.menu ul li a{
+
+.menu ul li a {
     margin-left: 50px;
     padding: 20px 35px;
     line-height: 100px;
     color: rgba(51, 51, 51, 0.7);
     font-size: 20px;
     font-weight: 400;
-    transition: .25s;
+    transition: .5s;
 }
-.menu ul li a:hover{
+
+.menu ul li a:hover {
     font-size: 22px;
     font-weight: 700;
     background: #FD6E0A;
     border-radius: 5px;
     color: white;
 }
-.button a{
+
+.button a {
     margin-left: 50px;
     padding: 20px 35px;
     line-height: 100px;
@@ -85,36 +103,49 @@ body{
     transition: .5s;
 }
 
-.button a:hover{
+.button a:hover {
     background-color: transparent;
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
 }
+
+.button {
+    transition: .5s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
 /* Header Part End */
 
 /* banner part start */
-#bannerPart{
+#bannerPart {
     background: #FFF8F3;
     height: 737px;
 }
-.bannerLeft{
+
+.bannerLeft {
     width: 50%;
 }
-.bannerLeft h3{
+
+.bannerLeft h3 {
     color: rgba(51, 51, 51, 0.7);
     font-size: 45px;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
     padding-top: 197px;
 }
-.bannerLeft h1{
+
+.bannerLeft h1 {
     color: #181818;
     font-size: 85px;
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     padding-top: 50px;
 }
-.bannerLeft p{
+
+.bannerLeft p {
     color: #757575;
     font-size: 18px;
     font-weight: 400;
@@ -124,7 +155,8 @@ body{
     letter-spacing: 0.5px;
     padding-top: 40px;
 }
-.bannerBtn a{
+
+.bannerBtn a {
     padding: 20px 20px;
     background: #FD6E0A;
     border-radius: 5px;
@@ -132,94 +164,112 @@ body{
     font-size: 20px;
     font-weight: 700;
     margin-right: 30px;
-    transition: .4s;
+    transition: .5s;
 }
-.bannerBtn a:hover{
+
+.bannerBtn a:hover {
     background-color: transparent;
     color: #FD6E0A;
     border: 1px solid #FD6E0A;
+    font-size: 22px;
 }
-.bannerBtn{
+
+.bannerBtn {
     padding-top: 50px;
 }
-.bannerBtn i{
+
+.bannerBtn i {
     margin-right: 10px;
 }
-.bannerRight{
+
+.bannerRight {
     width: 50%;
 }
-.imgHold{
+
+.imgHold {
     position: relative;
     background: teal;
 }
-.model img{
+
+.model img {
     position: absolute;
     z-index: 2;
     top: -470px;
     right: -750px;
 }
-.modelBg img{
+
+.modelBg img {
     position: absolute;
     z-index: 1;
     top: -312px;
     right: -800px;
 }
+
 /* banner part end */
 
 /* About Me Part Start */
-#aboutPart{
+#aboutPart {
     padding: 130px;
 }
-.about{
+
+.about {
     text-align: center;
     background: #FFF8F3;
     padding: 130px;
     border-radius: 25px;
 }
-.aboutTop h3{
+
+.aboutTop h3 {
     font-size: 35px;
     font-weight: 700;
     color: #181818;
 }
-.aboutTop p{
+
+.aboutTop p {
     font-size: 18px;
     font-weight: 400;
     color: rgba(51, 51, 51, 0.7);
     line-height: 30px;
     padding-top: 40px;
 }
-.aboutBot{
+
+.aboutBot {
     padding-top: 50px;
     display: flex;
 }
-.item h4{
+
+.item h4 {
     font-size: 20px;
     font-weight: 400;
     padding-bottom: 20px;
     color: rgba(51, 51, 51, 0.7);
 }
-.item h3{
+
+.item h3 {
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 20px;
     color: rgba(0, 0, 0, 0.80);
 }
 
-.item{
+.item {
     width: 25%;
 }
+
 /* About Me Part End */
 
 /* Service Part Start */
-.serviceTop{
+.serviceTop {
     text-align: center;
 }
-.serviceTop h3{
+
+.serviceTop h3 {
     font-size: 35px;
     font-weight: 700;
     color: #181818;
 }
-.serviceTop p{
+
+.serviceTop p {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -228,11 +278,13 @@ body{
     margin: 0 auto;
     padding: 40px 0 50px 0;
 }
-.serviceBox{
+
+.serviceBox {
     display: flex;
     padding-bottom: 130px;
 }
-.serviceBox .item{
+
+.serviceBox .item {
     background: white;
     padding: 30px;
     border-radius: 5px;
@@ -240,136 +292,166 @@ body{
     margin: 0 auto;
     transition: .5s;
 }
-.serviceBox .item:hover{
+
+.serviceBox .item:hover {
     transform: scale(1.05);
 }
-.serviceBox .item h3{
+
+.serviceBox .item h3 {
     font-size: 20px;
     font-weight: 700;
     color: #181818;
     padding: 30px 0;
 }
-.serviceBox .item p{
+
+.serviceBox .item p {
     font-size: 16px;
     font-weight: 400;
     color: #757575;
     line-height: 28px;
     width: 205px;
 }
-.serviceBox .item img{
+
+.serviceBox .item img {
     border-radius: 5px;
 }
+
 /* Service Part End */
 
 /* Resume Part Start */
-.resumeTop h3{
+.resumeTop h3 {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
     color: #181818;
 }
-.resumeFlex{
+
+.resumeFlex {
     display: flex;
     justify-content: space-between;
     padding-top: 115px;
     margin: 0 auto;
 }
-.resumeLeft{
+
+.resumeLeft {
     width: 95%;
     margin-right: 2.5%;
 }
-.resumeRight{
+
+.resumeRight {
     width: 95%;
 }
-.resumeLeft .resumeItem h3{
+
+.resumeLeft .resumeItem h3 {
     font-size: 30px;
     font-weight: 700;
     color: #474747;
     padding-bottom: 50px;
 }
-.resumeLeft .resumeItem h4{
+
+.resumeLeft .resumeItem h4 {
     font-size: 25px;
     font-weight: 700;
     color: #474747;
 }
-.resumeLeft .resumeItem h5{
+
+.resumeLeft .resumeItem h5 {
     font-size: 20px;
     font-weight: 600;
     color: #757575;
     padding: 25px 0;
 }
-.resumeLeft .resumeItem p{
+
+.resumeLeft .resumeItem p {
     font-size: 16px;
     font-weight: 400;
     color: #757575;
     line-height: 28px;
 }
-.resumeLeft hr{
+
+.resumeLeft hr {
     margin: 50px 0 50px;
     border: none;
     border-top: 1px solid #D1D1D1;
     height: 0;
 }
 
-.resumeRight .resumeItem h3{
+.resumeRight .resumeItem h3 {
     font-size: 30px;
     font-weight: 700;
     color: #474747;
     padding-bottom: 50px;
 }
-.resumeRight .resumeItem h4{
+
+.resumeRight .resumeItem h4 {
     font-size: 25px;
     font-weight: 700;
     color: #474747;
 }
-.resumeRight .resumeItem h5{
+
+.resumeRight .resumeItem h5 {
     font-size: 20px;
     font-weight: 600;
     color: #757575;
     padding: 25px 0;
 }
-.resumeRight .resumeItem p{
+
+.resumeRight .resumeItem p {
     font-size: 16px;
     font-weight: 400;
     color: #757575;
     line-height: 28px;
 }
-.resumeRight hr{
+
+.resumeRight hr {
     margin: 50px 0 50px;
     border: none;
     border-top: 1px solid #D1D1D1;
     height: 0;
 }
-.resumeBtn{
+
+.resumeBtn {
     padding: 70px 0 135px 0;
     text-align: center;
 }
-.resumeBtn a{
+
+.resumeBtn a {
     font-size: 20px;
     font-weight: 700;
     color: white;
     padding: 20px;
     background: #FD6E0A;
     border-radius: 5px;
+    transition: .5s;
 }
+
+.resumeBtn a:hover {
+    background: transparent;
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    font-size: 22px;
+}
+
 /* Resume Part End */
 
 /* Footer Part Start */
-#footerPart{
+#footerPart {
     background: #FFF8F3;
     padding: 130px 0;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
 }
 
-.footerLeft h3{
+.footerLeft h3 {
     font-size: 35px;
     font-weight: 700;
     color: #181818;
 }
-.footerLeft p{
+
+.footerLeft p {
     font-size: 16px;
     font-weight: 400;
     color: #474747;
@@ -377,77 +459,79 @@ body{
     padding: 25px 0 30px 0;
     line-height: 28px;
 }
-.footerIcon i{
+
+.footerIcon i {
     margin-right: 25px;
     font-size: 24px;
     color: #FD6E0A;
     transition: .5s;
 }
-.footerIcon i:hover{
+
+.footerIcon i:hover {
     transform: scale(1.5);
-    background: #ffe6d5;
-    padding: 5px 7px;
 }
+
 .contact-container {
     width: 100%;
-    max-width: 400px; /* Adjust max width as needed */
-    padding: 30px;
-    border-radius: 8px; /* Optional: adds rounded corners */
+    max-width: 460px;
+    border-radius: 5px;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: #333;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #181818;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Spacing between form elements */
+    gap: 15px;
 }
 
-/* Style for all input fields and the textarea */
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%;
-    padding: 15px;
-    border: none; /* Remove default border */
-    border-radius: 4px;
-    background-color: white; /* White background for inputs */
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
     font-size: 16px;
-    box-sizing: border-box; /* Include padding in the element's total width/height */
-    /* Optional: subtle shadow/border-like effect on focus */
-    transition: box-shadow 0.2s;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s;
 }
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: #777; /* Color for the placeholder text */
+    color: #757575;
 }
 
 .contact-form textarea {
-    resize: none; /* Prevents resizing of the text area */
+    resize: none;
 }
 
-/* Style for the Submit button */
 .submit-button {
-    background-color: #ff6600; /* Bright orange color */
+    background-color: #FD6E0A;
     color: white;
-    padding: 12px 20px;
+    padding: 20px 40px;
     border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    font-weight: 600;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
     cursor: pointer;
-    width: 150px; /* Specific width for the button */
-    align-self: flex-start; /* Aligns the button to the left */
-    transition: background-color 0.3s;
+    width: 150px;
+    align-self: flex-start;
+    transition: 0.5s;
 }
 
 .submit-button:hover {
-    background-color: #e65c00; /* Slightly darker orange on hover */
+    border: 1px solid #FD6E0A;
+    background: transparent;
+    color: #FD6E0A;
+    transform: scale(1.05);
+
 }
+
 /* Footer Part End */
