@@ -1,0 +1,453 @@
+/* All common css start */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    line-height: 0.8;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+body{
+    background: #F3F3F3;
+}
+/* All common css end */
+
+/* Header Part Start */
+#headerPart{
+    background: #FFF8F3;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header .logo{
+    margin-top: 30px;
+    transition: .5s;
+}
+.header .logo:hover{
+    transform: scale(1.1);
+}
+
+.menu ul{
+    display: flex;
+}
+.menu ul li a{
+    margin-left: 50px;
+    padding: 20px 35px;
+    line-height: 100px;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 20px;
+    font-weight: 400;
+    transition: .25s;
+}
+.menu ul li a:hover{
+    font-size: 22px;
+    font-weight: 700;
+    background: #FD6E0A;
+    border-radius: 5px;
+    color: white;
+}
+.button a{
+    margin-left: 50px;
+    padding: 20px 35px;
+    line-height: 100px;
+    color: white;
+    background: #FD6E0A;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .5s;
+}
+
+.button a:hover{
+    background-color: transparent;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+}
+/* Header Part End */
+
+/* banner part start */
+#bannerPart{
+    background: #FFF8F3;
+    height: 737px;
+}
+.bannerLeft{
+    width: 50%;
+}
+.bannerLeft h3{
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 45px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 197px;
+}
+.bannerLeft h1{
+    color: #181818;
+    font-size: 85px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 50px;
+}
+.bannerLeft p{
+    color: #757575;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    width: 585px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.5px;
+    padding-top: 40px;
+}
+.bannerBtn a{
+    padding: 20px 20px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-right: 30px;
+    transition: .4s;
+}
+.bannerBtn a:hover{
+    background-color: transparent;
+    color: #FD6E0A;
+    border: 1px solid #FD6E0A;
+}
+.bannerBtn{
+    padding-top: 50px;
+}
+.bannerBtn i{
+    margin-right: 10px;
+}
+.bannerRight{
+    width: 50%;
+}
+.imgHold{
+    position: relative;
+    background: teal;
+}
+.model img{
+    position: absolute;
+    z-index: 2;
+    top: -470px;
+    right: -750px;
+}
+.modelBg img{
+    position: absolute;
+    z-index: 1;
+    top: -312px;
+    right: -800px;
+}
+/* banner part end */
+
+/* About Me Part Start */
+#aboutPart{
+    padding: 130px;
+}
+.about{
+    text-align: center;
+    background: #FFF8F3;
+    padding: 130px;
+    border-radius: 25px;
+}
+.aboutTop h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.aboutTop p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 0.7);
+    line-height: 30px;
+    padding-top: 40px;
+}
+.aboutBot{
+    padding-top: 50px;
+    display: flex;
+}
+.item h4{
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: rgba(51, 51, 51, 0.7);
+}
+.item h3{
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: rgba(0, 0, 0, 0.80);
+}
+
+.item{
+    width: 25%;
+}
+/* About Me Part End */
+
+/* Service Part Start */
+.serviceTop{
+    text-align: center;
+}
+.serviceTop h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.serviceTop p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #757575;
+    width: 973px;
+    margin: 0 auto;
+    padding: 40px 0 50px 0;
+}
+.serviceBox{
+    display: flex;
+    padding-bottom: 130px;
+}
+.serviceBox .item{
+    background: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: 23%;
+    margin: 0 auto;
+    transition: .5s;
+}
+.serviceBox .item:hover{
+    transform: scale(1.05);
+}
+.serviceBox .item h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: #181818;
+    padding: 30px 0;
+}
+.serviceBox .item p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    line-height: 28px;
+    width: 205px;
+}
+.serviceBox .item img{
+    border-radius: 5px;
+}
+/* Service Part End */
+
+/* Resume Part Start */
+.resumeTop h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.resumeFlex{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 115px;
+    margin: 0 auto;
+}
+.resumeLeft{
+    width: 95%;
+    margin-right: 2.5%;
+}
+.resumeRight{
+    width: 95%;
+}
+.resumeLeft .resumeItem h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+    padding-bottom: 50px;
+}
+.resumeLeft .resumeItem h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+}
+.resumeLeft .resumeItem h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    padding: 25px 0;
+}
+.resumeLeft .resumeItem p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    line-height: 28px;
+}
+.resumeLeft hr{
+    margin: 50px 0 50px;
+    border: none;
+    border-top: 1px solid #D1D1D1;
+    height: 0;
+}
+
+.resumeRight .resumeItem h3{
+    font-size: 30px;
+    font-weight: 700;
+    color: #474747;
+    padding-bottom: 50px;
+}
+.resumeRight .resumeItem h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: #474747;
+}
+.resumeRight .resumeItem h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: #757575;
+    padding: 25px 0;
+}
+.resumeRight .resumeItem p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #757575;
+    line-height: 28px;
+}
+.resumeRight hr{
+    margin: 50px 0 50px;
+    border: none;
+    border-top: 1px solid #D1D1D1;
+    height: 0;
+}
+.resumeBtn{
+    padding: 70px 0 135px 0;
+    text-align: center;
+}
+.resumeBtn a{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    padding: 20px;
+    background: #FD6E0A;
+    border-radius: 5px;
+}
+/* Resume Part End */
+
+/* Footer Part Start */
+#footerPart{
+    background: #FFF8F3;
+    padding: 130px 0;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft h3{
+    font-size: 35px;
+    font-weight: 700;
+    color: #181818;
+}
+.footerLeft p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #474747;
+    width: 579px;
+    padding: 25px 0 30px 0;
+    line-height: 28px;
+}
+.footerIcon i{
+    margin-right: 25px;
+    font-size: 24px;
+    color: #FD6E0A;
+    transition: .5s;
+}
+.footerIcon i:hover{
+    transform: scale(1.5);
+    background: #ffe6d5;
+    padding: 5px 7px;
+}
+.contact-container {
+    width: 100%;
+    max-width: 400px; /* Adjust max width as needed */
+    padding: 30px;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Spacing between form elements */
+}
+
+/* Style for all input fields and the textarea */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none; /* Remove default border */
+    border-radius: 4px;
+    background-color: white; /* White background for inputs */
+    font-size: 16px;
+    box-sizing: border-box; /* Include padding in the element's total width/height */
+    /* Optional: subtle shadow/border-like effect on focus */
+    transition: box-shadow 0.2s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #777; /* Color for the placeholder text */
+}
+
+.contact-form textarea {
+    resize: none; /* Prevents resizing of the text area */
+}
+
+/* Style for the Submit button */
+.submit-button {
+    background-color: #ff6600; /* Bright orange color */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 150px; /* Specific width for the button */
+    align-self: flex-start; /* Aligns the button to the left */
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #e65c00; /* Slightly darker orange on hover */
+}
+/* Footer Part End */
